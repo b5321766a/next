@@ -149,12 +149,6 @@ getWordCount(editorState: EditorState): number
 mergeEntityData(editorState: EditorState, entityKey: string, data: Object): EditorState
 ```
 
-### mergeBlockData
-
-```javascript
-mergeBlockData(editorState: EditorState, block: ContentBlock, data: { [id: string]: any }): EditorState
-```
-
 ## License
 
 MIT © [juliankrispel](https://github.com/juliankrispel)
