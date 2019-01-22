@@ -266,15 +266,3 @@ export function getWordCount(editorState: EditorState): number {
   const wordArray = cleanString.match(/\S+/g) // matches words according to whitespace
   return wordArray ? wordArray.length : 0
 }
-
-export function mergeEntityData(
-  editorState: EditorState,
-  entityKey: string,
-  data: Object
-): EditorState {
-  const newContentState = editorState
-    .getCurrentContent()
-    .mergeEntityData(entityKey, data)
-
-  return EditorState.push(editorState, newContentState, 'apply-entity')
-}

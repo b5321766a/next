@@ -143,12 +143,6 @@ getLineCount(editorState: EditorState): number
 getWordCount(editorState: EditorState): number
 ```
 
-### mergeEntityData
-
-```javascript
-mergeEntityData(editorState: EditorState, entityKey: string, data: Object): EditorState
-```
-
 ## License
 
 MIT © [juliankrispel](https://github.com/juliankrispel)
